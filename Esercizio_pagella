@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<title>Esercizio 2</title>
+</head>
+
+<body>
+
+<script>
+function stampa() 
+{
+var print=document.getElementById("nome").value;
+document.getElementById("p1").innerHTML=print;
+if (document.getElementById("materia1").checked==true)
+	alert("hai selezionato la materia "+ document.getElementById("materia1").value)
+if (document.getElementById("materia2").checked==true)
+	alert("hai selezionato la materia "+ document.getElementById("materia2").value)
+}
+</script>
+
+<form>
+	<label for="nome">Nome:</label><br>
+	<input type="text" id="nome" name="nome"><br>
+	<label for="cognome">Cognome:</label><br>
+	<input type="text" id="cognome" name="cognome"><br>
+  	<label for="eta">Età:</label><br>
+	<input type="text" id="eta" name="eta"><br>
+	<br><input type="button" value="Clicca" onclick=stampa()>
+</form>
+
+<form>
+	<input type="checkbox" id="materia1" name="materia_1" value="Italiano">
+  	<label for="materia1"> Italiano</label><br>
+  	<input type="checkbox" id="materia2" name="materia2" value="Storia">
+  	<label for="materia2"> Storia</label><br>
+	<input type="checkbox" id="materia3" name="materia3" value="Matematica">
+ 	<label for="Materia3"> Matematica</label><br>
+  	<input type="checkbox" id="materia4" name="materia4" value="Inglese">
+  	<label for="materia1"> Inglese</label><br>
+  	<input type="checkbox" id="materia5" name="materia5" value="Informatica">
+  	<label for="materia2"> Informatica</label><br>
+  	<input type="checkbox" id="materia6" name="materia6" value="TPSIT">
+  	<label for="Materia3"> TPSIT</label>
+</form>
+
+<p id="p1"></p>
+
+
+
+</body>
+
+</html>
