@@ -11,10 +11,46 @@ function stampa()
 {
 var print=document.getElementById("nome").value;
 document.getElementById("p1").innerHTML=print;
+
+var print=document.getElementById("cognome").value;
+document.getElementById("p2").innerHTML=print;
+
+var print=document.getElementById("eta").value;
+document.getElementById("p3").innerHTML=print;
+
 if (document.getElementById("materia1").checked==true)
-	alert("hai selezionato la materia "+ document.getElementById("materia1").value)
+	{
+	var print=document.getElementById("materia1").value;
+	document.getElementById("p4").innerHTML=print;
+	}
 if (document.getElementById("materia2").checked==true)
-	alert("hai selezionato la materia "+ document.getElementById("materia2").value)
+	{
+	var print=document.getElementById("materia2").value;
+	document.getElementById("p5").innerHTML=print;
+	}
+
+if (document.getElementById("materia3").checked==true)
+	{
+	var print=document.getElementById("materia3").value;
+	document.getElementById("p6").innerHTML=print;
+	}
+if (document.getElementById("materia4").checked==true)
+	{
+	var print=document.getElementById("materia4").value;
+	document.getElementById("p7").innerHTML=print;
+	}
+
+if (document.getElementById("materia5").checked==true)
+	{
+	var print=document.getElementById("materia5").value;
+	document.getElementById("p8").innerHTML=print;
+	}
+
+if (document.getElementById("materia6").checked==true)
+	{
+	var print=document.getElementById("materia6").value;
+	document.getElementById("p9").innerHTML=print;
+	}
 }
 </script>
 
@@ -25,7 +61,6 @@ if (document.getElementById("materia2").checked==true)
 	<input type="text" id="cognome" name="cognome"><br>
   	<label for="eta">Età:</label><br>
 	<input type="text" id="eta" name="eta"><br>
-	<br><input type="button" value="Clicca" onclick=stampa()>
 </form>
 
 <form>
@@ -34,17 +69,26 @@ if (document.getElementById("materia2").checked==true)
   	<input type="checkbox" id="materia2" name="materia2" value="Storia">
   	<label for="materia2"> Storia</label><br>
 	<input type="checkbox" id="materia3" name="materia3" value="Matematica">
- 	<label for="Materia3"> Matematica</label><br>
+ 	<label for="materia3"> Matematica</label><br>
   	<input type="checkbox" id="materia4" name="materia4" value="Inglese">
-  	<label for="materia1"> Inglese</label><br>
+  	<label for="materia4"> Inglese</label><br>
   	<input type="checkbox" id="materia5" name="materia5" value="Informatica">
-  	<label for="materia2"> Informatica</label><br>
+  	<label for="materia5"> Informatica</label><br>
   	<input type="checkbox" id="materia6" name="materia6" value="TPSIT">
-  	<label for="Materia3"> TPSIT</label>
+  	<label for="materia6"> TPSIT</label>
+	<br><input type="button" value="Clicca" onclick=stampa()>
 </form>
 
-<p id="p1"></p>
+<h3 id="p1"></h3>
+<h3 id="p2"></h3>
+<h3 id="p3"></h3>
 
+<h3 id="p4"></h3>
+<h3 id="p5"></h3>
+<h3 id="p6"></h3>
+<h3 id="p7"></h3>
+<h3 id="p8"></h3>
+<h3 id="p9"></h3>
 
 
 </body>
