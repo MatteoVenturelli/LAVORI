@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<title>Calcolatrice basica</title>
+</head>
+
+<body>
+<h2>Calcolatrice basica</h2>
+<input type="text" id="n1" name="n1"><br>
+<br>
+<input type="text" id="n2" name="n2"><br>
+<br><input type="button" value="+" onclick=somma()>
+<input type="button" value="-" onclick=sottrazione()>
+<input type="button" value="*" onclick=moltiplicazione()>
+<input type="button" value="/" onclick=divisione()>
+<p id="p1"></p>
+<script>
+function somma()
+{
+var somma=parseInt(document.getElementById("n1").value)+parseInt(document.getElementById("n2").value);
+document.getElementById("p1").innerHTML=somma;
+}
+function sottrazione()
+{
+var differenza=parseInt(document.getElementById("n1").value)-parseInt(document.getElementById("n2").value);
+document.getElementById("p1").innerHTML=differenza;
+}
+function moltiplicazione()
+{
+var prodotto=parseInt(document.getElementById("n1").value)*parseInt(document.getElementById("n2").value);
+document.getElementById("p1").innerHTML=prodotto;
+}
+function divisione()
+{
+var quoziente=parseInt(document.getElementById("n1").value)/parseInt(document.getElementById("n2").value);
+document.getElementById("p1").innerHTML=quoziente;
+}
+</script>
+
+</body>
+
+</html>
