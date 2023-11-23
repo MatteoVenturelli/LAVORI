@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Calcolatrice 2</title>
+  </head>
+  <body>
+    <input type="text" id="display" style="width: 200px; height: 50px">
+    <br>
+    <br>
+    <button onclick="stampaNumeri('%')">%</button>
+    <button onclick="DEL()">DEL</button>
+    <button onclick="AC()">AC</button><br>
+    <br>
+    <input type="button" id=" bot" value="7" onclick="stampaNumeri('7')">
+    <input type="button" id=" bot" value="8" onclick="stampaNumeri('8')">
+    <input type="button" id=" bot" value="9" onclick="stampaNumeri('9')">
+    <button onclick="stampaNumeri('√')">√</button>
+    <br>
+    <br>
+    <input type="button" id=" bot" value="4" onclick="stampaNumeri('4')">
+    <input type="button" id=" bot" value="5" onclick="stampaNumeri('5')">
+    <input type="button" id=" bot" value="6" onclick="stampaNumeri('6')">
+    <input type="button" id=" bot" value="*" onclick="stampaNumeri('*')">
+    <input type="button" id=" bot" value="/" onclick="stampaNumeri('/')">
+    <br></br>
+    <input type="button" id=" bot" value="1" onclick="stampaNumeri('1')">
+    <input type="button" id=" bot" value="2" onclick="stampaNumeri('2')">
+    <input type="button" id=" bot" value="3" onclick="stampaNumeri('3')">
+    <input type="button" id=" bot" value="+" onclick="stampaNumeri('+')">
+    <input type="button" id=" bot" value="-" onclick="stampaNumeri('-')">
+    <br>
+    <br>
+    <button onclick="stampaNumeri('.')">.</button>
+    <input type="button" id=" bot" value="0" onclick="stampaNumeri('0')">
+    <button onclick="stampaNumeri('^')">^</button>
+    <button onclick="risultato()">=</button>
+    <p id="numeriStampati"></p>
+    <script>
+      function stampaNumeri(num) 
+      {
+        document.getElementById("display").value += num;
+      }
+
+      function DEL() 
+      {
+        var valori = document.getElementById("display").value;
+        document.getElementById("display").value = valori.slice(0, -1);
+      }
+
+      function AC() 
+      {
+        document.getElementById("display").value = "";
+      }
+
+     
+    </script>
+  </body>
+</html>
+</body>
+</html>
