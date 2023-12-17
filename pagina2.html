@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualizzazione</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="anagraficaContainer"></div>
+
+    <script>
+        var storedData = localStorage.getItem('anagraficaData');
+        var container = document.getElementById('anagraficaContainer');
+
+        if (storedData) {
+            var dataObject = JSON.parse(storedData);
+
+            var html = `
+                <p><span class="label">Nome:</span> ${dataObject.nome}</p>
+                <p><span class="label">Cognome:</span> ${dataObject.cognome}</p>
+                <p><span class="label">Età:</span> ${dataObject.eta}</p>
+                <p><span class="label">Sesso:</span> ${dataObject.sesso}</p>
+                <p><span class="label">Indirizzo:</span> ${dataObject.indirizzo}</p>
+                <p><span class="label">Citta:</span> ${dataObject.citta}</p>
+                <p><span class="label">Provincia:</span> ${dataObject.provincia}</p>
+                <p><span class="label">Materie:</span> ${dataObject.materie}</p>
+                
+            `;
+
+            container.innerHTML = html;
+        } else {
+            container.innerHTML = '<p>Nessun dato trovato.</p>';
+        }
+    </script>
+</body>
+</html>

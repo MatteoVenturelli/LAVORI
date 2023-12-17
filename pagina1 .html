@@ -1,0 +1,142 @@
+<html>
+<head>
+    <title>Esercizio 2</title>
+</head>
+<body>
+    <h2>Pagella</h2>
+    
+    <script>
+        function stampa() {
+            var nome = document.getElementById("nome").value;
+            var cognome = document.getElementById("cognome").value;
+            var eta = document.getElementById("eta").value;
+            var sesso;
+	    var indirizzo=document.getElementById("indirizzo").value;
+
+var citta=document.getElementById("citta").value;
+
+var provincia=document.getElementById("provincia").value;
+
+var materie;
+
+if(document.getElementById("uomo").checked)
+	sesso=document.getElementById("uomo").value;
+else if(document.getElementById("donna").checked)
+	sesso=document.getElementById("donna").value;
+else if(document.getElementById("altro").checked)
+	sesso=document.getElementById("altro").value;
+
+if (document.getElementById("materia1").checked==true)
+	materie=document.getElementById("materia1").value
+	
+if (document.getElementById("materia2").checked==true)
+{
+	if(materie!=null)
+		materie=materie+", "+document.getElementById("materia2").value
+	else
+		materie=document.getElementById("materia2").value
+}
+	
+if (document.getElementById("materia3").checked==true)
+{	
+	if(materie!=null)
+		materie=materie+", "+document.getElementById("materia3").value
+	else
+	materie=document.getElementById("materia3").value
+	
+}
+if (document.getElementById("materia4").checked==true)	
+{
+	if(materie!=null)
+		materie=materie+", "+document.getElementById("materia4").value
+	else
+	materie=document.getElementById("materia4").value
+}
+if (document.getElementById("materia5").checked==true)
+{
+	if(materie!=null)
+		materie=materie+", "+document.getElementById("materia5").value
+	else
+		materie=document.getElementById("materia5").value
+}
+if (document.getElementById("materia6").checked==true)
+{
+	if(materie!=null)
+		materie=materie+", "+document.getElementById("materia6").value
+	else
+		materie=document.getElementById("materia6").value
+}
+document.getElementById("p1").innerHTML="Nome: " + nome + "<br>Cognome: " + cognome + "<br>Età: " + eta + "<br>Sesso:" + sesso +
+										"<br>Indirizzo: " + indirizzo + "<br>Città/Paese: " + citta + "<br>Provincia: " + provincia +
+		
+
+            var dataObject = {
+                nome: nome,
+                cognome: cognome,
+                eta: eta,
+                sesso: sesso,
+                indirizzo: indirizzo,
+		citta: citta,
+		provincia: provincia,
+		materie: materie,
+		
+            };
+
+          
+            localStorage.setItem('anagraficaData', JSON.stringify(dataObject));
+
+            window.location.href = 'pagina2.html';
+        }
+    </script>
+
+    <form id="anagraficaDati">
+       <label for="nome">Nome:</label><br>
+	<input type="text" id="nome" name="nome"><br>
+	<label for="cognome">Cognome:</label><br>
+	<input type="text" id="cognome" name="cognome"><br>
+  	<label for="eta">Età:</label><br>
+	<input type="text" id="eta" name="eta"><br>
+	<p>Sesso:</p>
+	<input type="radio" id="uomo" name="sesso" value="Uomo">
+ 	<label for="uomo">Uomo</label>
+  	<input type="radio" id="donna" name="sesso" value="Donna">
+  	<label for="donna">Donna</label>
+	<input type="radio" id="altro" name="sesso" value="Altro">
+  	<label for="altro">Altro</label><br>
+	<label for="indirizzo">Indirizzo: </label><br>
+	<input type="text" id="indirizzo" name="indirizzo"><br>
+	<label for="citta">Città/Paese: </label><br>
+	<input type="text" id="citta" name="citta"><br>
+	<br>
+	<div class="provincia">
+  		<select id="provincia">
+    	<option value="Non selezionato">Provincia:</option>
+    	<option value="Milano">Milano</option>
+    	<option value="Roma">Roma</option>
+    	<option value="Firenze">Firenze</option>
+    	<option value="Ancona">Ancona</option>
+    	<option value="Napoli">Napoli</option>
+    	<option value="Torino">Torino</option>
+    	<option value="Venezia">Venezia</option>
+    	<option value="Taranto">Taranto</option>
+    	<option value="Bologna">Bologna</option>
+    	<option value="Perugia">Perugia</option>
+  		</select>
+	</div>
+	<p>Materie valutate:</p>
+	<input type="checkbox" id="materia1" name="materia_1" value="Italiano">
+  	<label for="materia1"> Italiano</label><br>
+  	<input type="checkbox" id="materia2" name="materia2" value="Storia">
+  	<label for="materia2"> Storia</label><br>
+	<input type="checkbox" id="materia3" name="materia3" value="Matematica">
+ 	<label for="materia3"> Matematica</label><br>
+  	<input type="checkbox" id="materia4" name="materia4" value="Inglese">
+  	<label for="materia4"> Inglese</label><br>
+  	<input type="checkbox" id="materia5" name="materia5" value="Informatica">
+  	<label for="materia5"> Informatica</label><br>
+  	<input type="checkbox" id="materia6" name="materia6" value="TPSIT">
+  	<label for="materia6"> TPSIT</label>
+        <input type="button" value="Invia" onclick="stampa()">
+    </form>
+</body>
+</html>
