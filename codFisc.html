@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Espressioni regolari</title>
+</head>
+
+<body>
+    <script>
+        function controllo()
+        {
+            let stringa=document.getElementById("stringa").value;
+            let pattern=/^[A-Z]{6}\d{2}[A-Z]\d{2}[A-Z]\d{3}[A-Z]$/;
+
+            if(pattern.test(stringa))
+                document.getElementById("testo").innerHTML="Il codice fiscale è valido";
+
+            else
+                document.getElementById("testo").innerHTML="Il codice fiscale non è valido";
+
+        }
+    </script>
+
+<label for="stringa">Inserire codice fiscale:</label><br>
+	<input type="text" id="stringa" name="stringa"><br>
+
+    <br><input type="button" value="Invia" onclick=controllo()>
+
+    <p id="testo"></p>
+
+</body>
+
+
+
+
+</html>
