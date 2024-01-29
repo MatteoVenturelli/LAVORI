@@ -9,24 +9,45 @@
         {
             let stringa=document.getElementById("stringa").value;
             let pattern=/@/g;
-            let result = stringa.match(pattern);
+            let result=stringa.match(pattern);
 
             if(result=="@")
             {
-                document.getElementById("testo").innerHTML = "L'e-mail è valida";
+                let numCaratteri=0;
+                for(let i=0; i<=stringa.length; i++)
+                {
+                    let pattern2=/./g;
+                    let carattere=stringa.charAt(stringa.length-i)
+                    let result2=carattere.match(pattern2);
+                    if(result2=='.' && numCaratteri<3)
+                    {
+                        document.getElementById("testo").innerHTML = "L'e-mail non è valida";
+                        break;
+                    }
+                    else if(result2!='.')
+                    {
+                        numCaratteri++;
+                    }
+
+                    else if(result2=='.' && numCaratteri>1 && numCaratteri<=7)
+                    {
+                        document.getElementById("testo").innerHTML = "L'e-mail è valida";
+                        break;
+                    }
+
+                    else
+                    {
+                        document.getElementById("testo").innerHTML = "L'e-mail non è valida";
+                        break;
+                    }
+                }
+
             }
             else
             {
                 document.getElementById("testo").innerHTML = "L'e-mail non è valida";
             }
-
-        
         }
-
-
-
-
-
     </script>
 
 <label for="stringa">Inserire stringa:</label><br>
