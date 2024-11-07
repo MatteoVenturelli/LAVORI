@@ -1,0 +1,37 @@
+{
+"Magazzino" :
+[
+{
+    "nome":"Pomodoro",
+    "quantita":178,
+    "data_scadenza": "02/11/24",
+    "prezzo_acquisto": 3,
+    "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fpassioneinverde.edagricole.it%2Fstoria-del-pomodoro-lorigine-del-re-degli-ortaggi%2F&psig=AOvVaw1CikOMz-82JmLl2hw5ds4F&ust=1729934900030000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDS3czsqYkDFQAAAAAdAAAAABAE"
+},
+
+{
+    "nome":"Mozzarella",
+    "quantita":22,
+    "data_scadenza": "10/04/24",
+    "prezzo_acquisto": 4,
+    "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ilmessaggero.it%2Fsalute%2Falimentazione%2Fmozzarella_bufala_frigo_o_no-4387439.html&psig=AOvVaw2E7qwA8c29x7V5AX74X9Dj&ust=1729934961272000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNiUxuvsqYkDFQAAAAAdAAAAABAE"
+    
+},
+{
+    "nome":"Marmellata",
+    "quantita":24,
+    "data_scadenza": "06/09/24",
+    "prezzo_acquisto": 2,
+    "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.piccolericette.net%2Fpiccolericette%2Frecipe%2Fmarmellata-di-lamponi%2F&psig=AOvVaw0t21X0wXFNQf_sJPxbjiFP&ust=1729935037063000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCWypTtqYkDFQAAAAAdAAAAABAE"
+},
+
+{
+    "nome":"Fette_biscottate",
+    "quantita":20,
+    "data_scadenza": "06/09/24",
+    "prezzo_acquisto": 1.5,
+    "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ericaliverani.blog%2Fle-fette-biscottate%2F&psig=AOvVaw2c_OjR2dYICICMi97VevnA&ust=1729935087514000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPC1uqLtqYkDFQAAAAAdAAAAABAE"
+}
+]
+}
+
