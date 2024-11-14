@@ -1,0 +1,37 @@
+{
+"Magazzino" :
+[
+{
+    "nome":"Pomodoro",
+    "quantita":178,
+    "data_scadenza": "02/11/24",
+    "prezzo_acquisto": 3,
+    "img":"https://healthy.thewom.it/wp-content/uploads/2023/07/pomodoro.jpg"
+},
+
+{
+    "nome":"Mozzarella",
+    "quantita":22,
+    "data_scadenza": "10/04/24",
+    "prezzo_acquisto": 4,
+    "img":"https://wiki.cucchiaio.it/wp-content/uploads/2015/12/mozzarella1.jpg"
+    
+},
+{
+    "nome":"Marmellata",
+    "quantita":24,
+    "data_scadenza": "06/09/24",
+    "prezzo_acquisto": 2,
+    "img":"https://www.casapappagallo.it/storage/26323/Marmellata-di-fragole-Bimby.jpg"
+},
+
+{
+    "nome":"Fette_biscottate",
+    "quantita":20,
+    "data_scadenza": "06/09/24",
+    "prezzo_acquisto": 1.5,
+    "img":"https://www.ericaliverani.blog/wp-content/uploads/2017/04/fette-biscottate.jpg"
+}
+]
+}
+
