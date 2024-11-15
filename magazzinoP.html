@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <meta charset="utf-8" />
 <body>
 
 <h2>Magazzino</h2>
@@ -23,10 +24,10 @@ function LetturaFile() {
             for (let i = 0; i < oggetto.Magazzino.length; i++) { 
                 str += "<tr><td>" + oggetto.Magazzino[i].nome + "</td><td>" + 
                         oggetto.Magazzino[i].data_scadenza + "</td><td>" + 
-                        oggetto.Magazzino[i].prezzo_acquisto + "</td><td>" + 
+                        oggetto.Magazzino[i].prezzo_acquisto + "€</td><td>" + 
                         oggetto.Magazzino[i].quantita + "</td><td>" + 
                         (oggetto.Magazzino[i].prezzo_acquisto * oggetto.Magazzino[i].quantita) + 
-                        "</td><td><a href='" + oggetto.Magazzino[i].img + "' target='_blank'><img src='" + oggetto.Magazzino[i].img + "' style='width:100px;height:100px;' /></a></td></tr>";
+                        "€</td><td><a href='" + oggetto.Magazzino[i].img + "' target='_blank'><img src='" + oggetto.Magazzino[i].img + "' style='width:100px;height:100px;' /></a></td></tr>";
             }
             
             document.getElementById("t1").innerHTML = str; 

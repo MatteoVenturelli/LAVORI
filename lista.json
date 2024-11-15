@@ -26,11 +26,19 @@
 },
 
 {
-    "nome":"Fette_biscottate",
+    "nome":"Fette biscottate",
     "quantita":20,
     "data_scadenza": "06/09/24",
     "prezzo_acquisto": 1.5,
     "img":"https://www.ericaliverani.blog/wp-content/uploads/2017/04/fette-biscottate.jpg"
+},
+
+{
+    "nome":"Gocciole",
+    "quantita":126,
+    "data_scadenza": "06/07/25",
+    "prezzo_acquisto": 2.99,
+    "img":"https://m.media-amazon.com/images/I/71T2KED8bfL._AC_UF894,1000_QL80_.jpg"
 }
 ]
 }
