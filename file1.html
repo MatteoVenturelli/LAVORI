@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leggi Anagrafica XML</title>
     <style>
-        body {
+        body 
+        {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-        table {
+        table 
+        {
             border-collapse: collapse;
             width: 100%;
             margin-top: 20px;
         }
-        th, td {
+        th, td 
+        {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
-        th {
+        th 
+        {
             background-color: #f4f4f4;
         }
     </style>
@@ -40,19 +44,16 @@
         </thead>
         <tbody></tbody>
     </table>
-
     <script>
         document.getElementById("loadData").addEventListener("click", function() {
             const xhr = new XMLHttpRequest();
             const url = "https://github.com/MatteoVenturelli/LAVORI/blob/main/anagrafica.xml"; 
-
             xhr.open("GET", url, true);
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     const xmlData = xhr.responseXML;
                     const tableBody = document.querySelector("#data-table tbody");
                     tableBody.innerHTML = ""; 
-
                     const dati = xmlData.getElementsByTagName("dati");
                     for (let i = 0; i < dati.length; i++) {
                         const persona = dati[i].getElementsByTagName("persona")[0];
@@ -62,7 +63,6 @@
                         const citta = persona.getElementsByTagName("citta")[0].textContent;
                         const cap = persona.getElementsByTagName("cap")[0].textContent;
                         const cellulare = persona.getElementsByTagName("cellulare")[0].textContent;
-
                         const row = document.createElement("tr");
                         row.innerHTML = `
                             <td>${nome}</td>
@@ -74,17 +74,14 @@
                         `;
                         tableBody.appendChild(row);
                     }
-
                     document.getElementById("data-table").style.display = "table";
                 } else {
                     alert("Errore nel caricamento del file XML: " + xhr.status);
                 }
             };
-
             xhr.onerror = function() {
                 alert("Errore nella connessione al file XML.");
             };
-
             xhr.send();
         });
     </script>
