@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <anagrafica>
+        <dati>
+            <persona>
+                <nome>Simone </nome>
+                <cognome>Armadio</cognome>
+                <indirizzo>via pietro 12</indirizzo>
+                <citta>Cerro Maggiore</citta>
+                <cap>20023</cap>
+                <cellulare>335 718 1703</cellulare>
+            </persona>
+        </dati>
+        <dati>
+            <persona>
+                <nome>Alexander</nome>
+                <cognome>Riefolo</cognome>
+                <indirizzo>via ada negri 34</indirizzo>
+                <citta>Saronno</citta>
+                <cap>20804</cap>
+                <cellulare>391 089 3872</cellulare>
+            </persona>
+        </dati>
+        <dati>
+            <persona>
+                <nome>Matteo</nome>
+                <cognome>Pallalontani</cognome>
+                <indirizzo>via san Paolo 3</indirizzo>
+                <citta>Cuggiono</citta>
+                <cap>20090</cap>
+                <cellulare>314 987 7743</cellulare>
+            </persona>
+        </dati>
+        <dati>
+            <persona>
+                <nome>Martina</nome>
+                <cognome>Rubini</cognome>
+                <indirizzo>via Ninfo 90</indirizzo>
+                <citta>Castronno</citta>
+                <cap>90069</cap>
+                <cellulare>369 390 9671</cellulare>
+            </persona>
+        </dati>
+        <dati>
+            <persona>
+                <nome>Filippo</nome>
+                <cognome>Rettatu</cognome>
+                <indirizzo>via lama 53</indirizzo>
+                <citta>Bergamo</citta>
+                <cap>20010</cap>
+                <cellulare>398 923 2431</cellulare>
+            </persona>
+        </dati>
+ </anagrafica>
